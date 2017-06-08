@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Verification</title>
+	<link rel="stylesheet" href="styles.css" />
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+<div id="container">
+	<h1>Password Verification</h1>
+	<form id="login" method='post' action='welcome.php'>
+		<ul>
+			<li>
+				<label for="username">Username:</label>
+				<span><input id="username" name="username" type="text" /></span>
+			</li>
+			<li>
+				<label for="pswd">Password:</label>
+				<span><input id="pswd" type="password" name="pswd" /></span>
+			</li>
+			<li>
+				<button type="submit" id="submit">Register</button>
+			</li>
+		</ul>
+	</form>
+	
+	<div id="pswd_info">
+		<h4>Password must meet the following requirements:</h4>
+		<ul>
+			<li id="letter" class="invalid">At least <strong>one letter</strong></li>
+			<li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
+			<li id="number" class="invalid">At least <strong>one number</strong></li>
+			<li id="length" class="invalid">Be at least <strong>8 characters</strong></li>
+		</ul>
+	</div>
+</div>
+ 
+</body>
+</html>
